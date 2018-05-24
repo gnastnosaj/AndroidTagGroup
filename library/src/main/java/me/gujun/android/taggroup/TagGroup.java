@@ -152,7 +152,7 @@ public class TagGroup extends ViewGroup {
         default_vertical_padding = dp2px(3.0f);
 
         // Load styled attributes.
-        final TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TagGroup, defStyleAttr, R.style.TagGroup);
+        final TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TagGroup, R.style.TagGroup, defStyleAttr);
         try {
             isAppendMode = a.getBoolean(R.styleable.TagGroup_atg_isAppendMode, false);
             inputHint = a.getText(R.styleable.TagGroup_atg_inputHint);
